@@ -17,4 +17,3 @@ install:
 # 脚本运行
 script:
   - npm run lint
-  - npm rum test
