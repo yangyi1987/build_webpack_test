@@ -1,0 +1,17 @@
+# 环境
+language: node_js
+node_js: -14
+
+cache:
+  apt: true
+  directories:
+    - node_modules
+
+# 安装阶段
+install:
+  - npm install -D
+
+# 脚本运行
+script:
+  - npm run lint
+  - npm rum test
