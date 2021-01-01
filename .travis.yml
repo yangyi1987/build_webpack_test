@@ -6,6 +6,9 @@ cache:
   directories:
     - node_modules
 
+before_install:
+  - npm install -g npm@2
+
 # 安装阶段
 install:
   - npm install
