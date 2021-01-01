@@ -1,6 +1,5 @@
 # 环境
 language: node_js
-node_js: -14
 
 cache:
   apt: true
