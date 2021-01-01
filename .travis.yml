@@ -8,7 +8,7 @@ cache:
 
 # 安装阶段
 install:
-  - npm install -D
+  - npm install
 
 # 脚本运行
 script:

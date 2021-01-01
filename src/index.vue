@@ -1,11 +1,9 @@
 <template>
-  <div></div>
+  <div>App</div>
 </template>
 
 <script>
 export default {
-  mounted() {
-  },
 };
 </script>
 
