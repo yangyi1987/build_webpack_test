@@ -78,5 +78,11 @@
     "commitizen": {
       "path": "cz-customizable"
     }
+  },
+  "husky": {
+    "hooks": {
+      "per-commit": "npm run test && npm run lint",
+      "per-push": "npm run lint"
+    }
   }
 }
