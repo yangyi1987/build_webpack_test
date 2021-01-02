@@ -16,4 +16,5 @@ install:
 
 # 脚本运行
 script:
+  - npm run lint
   - npm run test
