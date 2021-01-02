@@ -8,14 +8,15 @@
     "build": "webpack --config ./lib/webpack.prod.js",
     "dev": "webpack-dev-server --config ./lib/webpack.dev.js --open",
     "lint": "eslint --fix --ext .js,.vue src",
-    "precommit": "npm run test && npm run lint",
-    "prepush": "npm run lint"
+    "commitmsg": "commitlint -e $GIT_PARAMS"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "@vue/test-utils": "^1.1.2",
     "autoprefixer": "^10.1.0",
     "babel-eslint": "^10.1.0",
@@ -73,10 +74,9 @@
       ".*\\.(vue)$": "vue-jest"
     }
   },
-  "husky": {
-    "hooks": {
-      "per-commit": "npm run test && npm run lint",
-      "per-push": "npm run lint"
+  "config": {
+    "commitizen": {
+      "path": "cz-customizable"
     }
   }
 }
