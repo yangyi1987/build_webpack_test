@@ -8,7 +8,6 @@
     "build": "webpack --config ./lib/webpack.prod.js",
     "dev": "webpack-dev-server --config ./lib/webpack.dev.js --open",
     "lint": "eslint --fix --ext .js,.vue src",
-    "commitmsg": "commitlint -e $GIT_PARAMS"
   },
   "author": "",
   "license": "ISC",
@@ -72,11 +71,6 @@
     ],
     "transform": {
       ".*\\.(vue)$": "vue-jest"
-    }
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-customizable"
     }
   },
   "husky": {
